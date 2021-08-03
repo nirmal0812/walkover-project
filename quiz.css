@@ -19,7 +19,7 @@ nav{
 }
 nav ul{
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
     align-items: center;
     padding: 10px 0 0 0 ;
 }
@@ -27,6 +27,12 @@ nav ul li{
     align-items: center;
     color: white;
     margin-top: 5px;
+}
+nav ul .l1{
+    margin-left: 4.3em;
+}
+nav ul .l2{
+    margin-right: 4.3em;
 }
 nav h5{
     color: white;
@@ -94,6 +100,12 @@ input[type="button"] {
     .wrapper{
         width: 100%;
         border: none;
+    }
+    nav ul .l1{
+        margin-left: 10px;
+    }
+    nav ul .l2{
+        margin-right: 10px;
     }
     
 }
