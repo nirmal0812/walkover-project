@@ -1,0 +1,80 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+body{
+    background: white;
+}
+.navbar{
+    z-index: 10;
+    position: sticky;
+    display: flex;
+    align-items: center;
+    justify-content:space-evenly;
+    background: #583672;
+}
+.navbar h5{
+    color: white;
+}
+.submit {
+    border: none;
+    padding: 15px;
+    margin: 3px 0 3px 0;
+    background: #fff;
+    color: #583672;
+    font-weight: bold;
+    box-shadow: 0px 9px 15px -11px rgba(88,54,114,1);
+}
+.submit:hover{
+    text-decoration: none;
+    color: #583672;
+    border: 1 px solid white;
+}
+.wrapper {
+    max-width: 80%;
+    margin: 20px auto;
+    border: 1px solid #583672;
+    box-shadow: 0px 9px 15px -11px rgba(0, 0, 0, 0.712);
+}
+
+.content {
+    padding: 20px;
+    padding-bottom: 50px
+}
+.option {
+    margin-left: 30px;
+    height: 50px;
+    background-color: #f4f4f4;
+    position: relative;
+    width: 100%;
+    padding: 20px;
+}
+
+.option:hover {
+    background-color: #e8e8e8;
+    cursor: pointer
+}
+
+.option input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer
+}
+
+input[type="submit"] {
+    width: 100%;
+    height: 50px;
+    background-color: #583672;
+    border: none;
+    outline: none;
+    color: #fff;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover:focus {
+    border: none;
+    outline: none;
+    background-color: #4d2f64
+}
