@@ -2,28 +2,43 @@
     margin: 0;
     box-sizing: border-box;
     text-decoration: none;
+    list-style: none;
 }
 body{
     background: white;
+    display: flex;
+    justify-content: center;
 }
-.navbar{
+nav{
     z-index: 10;
-    position: sticky;
+    position: fixed;
+    width: 100%;
+    background:linear-gradient(#583672,#583672);
     display: flex;
     align-items: center;
-    justify-content:space-evenly;
-    background: #583672;
 }
-.navbar h5{
+nav ul{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 5px;
+}
+nav ul li{
+    align-items: center;
+    color: white;
+    margin-top: 7px;
+}
+nav h5{
     color: white;
 }
 .submit {
     border: none;
-    padding: 15px;
-    margin: 3px 0 3px 0;
+    padding: 10px;
+    margin-top: 5px;
     background: #fff;
     color: #583672;
     font-weight: bold;
+    border-radius: 3px;
     box-shadow: 0px 9px 15px -11px rgba(88,54,114,1);
 }
 .submit:hover{
@@ -32,8 +47,9 @@ body{
     border: 1 px solid white;
 }
 .wrapper {
-    max-width: 80%;
-    margin: 20px auto;
+    width: 90%;
+    margin-top: 60px;
+    margin-bottom: 40px;
     border: 1px solid #583672;
     box-shadow: 0px 9px 15px -11px rgba(0, 0, 0, 0.712);
 }
@@ -64,7 +80,7 @@ body{
 
 input[type="submit"] {
     width: 100%;
-    height: 50px;
+    height: 40px;
     background-color: #583672;
     border: none;
     outline: none;
@@ -73,8 +89,10 @@ input[type="submit"] {
     cursor: pointer;
 }
 
-input[type="submit"]:hover:focus {
-    border: none;
-    outline: none;
-    background-color: #4d2f64
+@media screen and (max-width:768px) {
+    .wrapper{
+        width: 100%;
+        border: none;
+    }
+    
 }
